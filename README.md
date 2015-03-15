@@ -3,6 +3,8 @@ Azusa Colors
 
 Azusa Colorsは、大体いい感じになるKeynoteテンプレート「[Azusa](http://sanographix.github.io/azusa-keynote/)」に、新しいカラーバリエーションを加えたものです。
 
+- <http://sanographix.github.io/azusa-colors/>
+
 ### 動作環境
 
 - Mac OSX Yosemite
