@@ -205,9 +205,13 @@ body {
 .getstarted {
     background: url("../images/azusa-colors-sample.gif") repeat top center;
     background-size: 1000px auto;
-    min-height: 375px;
+    height: 375px;
     box-sizing: border-box;
     position: relative;
+    @media #{$mq-sm} {
+        background-size: 700px auto;
+        height: auto;
+    }
 
     .section-mask {
         position: absolute;
