@@ -1,0 +1,41 @@
+// Common
+
+body {
+    font-family: 'Avenir Next LT W01 Bold','Avenir Next', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background: $bg;
+    color: $base;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    color: $link;
+    transition: all .2s;
+    text-decoration: none;
+
+    &:hover {
+        color: $hover;
+    }
+
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    a,a:hover {
+        color: $base;
+        text-decoration: none;
+    }
+}
+
+// mixin
+
+.clearfix {
+    *zoom: 1;
+    &:before,
+    &:after {
+        display: table;
+        content: " ";
+    }
+    &:after {
+        clear: both;
+    }
+}

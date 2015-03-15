@@ -1,0 +1,244 @@
+// Core (Main Style)
+body {
+    padding-top: 60px; //ヘッダ固定
+    @media #{$mq-sm} {
+        font-size: 90%;
+    }
+}
+
+.l-globalheader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background: $bg url("../images/globalheader.svg") repeat-x top center;
+    background-size: 1050px 10px;
+    padding-top: 10px;
+    width: 100%;
+    transition: all .2s;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    @media #{$mq-sm} {
+        background-size: 525px 5px;
+    }
+    &.is-scrolled {
+        box-shadow: 0 0 15px rgba(0,0,0,.3);
+    }
+}
+
+.l-globalheader-box {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+
+    .l-globalheader-left {
+        display: table-cell;
+        vertical-align: middle;
+        font-size: 120%;
+        width: 50%;
+        a {
+            color: $base;
+            display: inline-block;
+            padding: .7em 0;
+        }
+        @media #{$mq-sm} {
+            font-size: 100%;
+        }
+    }
+
+    .l-globalheader-right {
+        display: table-cell;
+        text-align: right;
+        vertical-align: middle;
+    }
+}
+
+.navbar-ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+        display: inline-block;
+        margin-right: 1em;
+        &:last-child {
+            margin-right: 0;
+        }
+
+        a {
+            display: inline-block;
+            padding: .7em 0;
+        }
+
+        @media #{$mq-sm} {
+            .label {
+                display: none;
+            }
+        }
+    }
+
+    img {
+        vertical-align: middle;
+    }
+}
+
+.link-tw {
+    color: #55acee;
+    &:hover {
+        color: darken(#55acee,10%);
+    }
+}
+
+.link-fb {
+    color: #3b5998;
+    &:hover {
+        color: darken(#3b5998,10%);
+    }
+}
+
+.section {
+    text-align: center;
+    padding: 3em 0;
+    @media #{$mq-sm} {
+        padding: 2em 0;
+    }
+
+    .section-header {
+        margin-bottom: 3em;
+    }
+
+    h2 {
+        font-size: 350%;
+        margin: 0;
+        @media #{$mq-sm} {
+            font-size: 250%;
+        }
+    }
+}
+
+.l-header {
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+
+    #video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        z-index: 1;
+        min-width: 1200px; // ビデオの上下を切らない対策
+        @media #{$mq-sm} {
+            min-width: 1000px;
+            margin-left: -100px;
+        }
+        @media #{$mq-xs} {
+            min-width: 800px;
+            margin-left: -200px;
+        }
+    }
+
+    .video-mask {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        background-color: rgba(0,0,0,.2);
+    }
+
+    .l-container {
+        position: relative;
+        z-index: 3;
+    }
+
+    h1 {
+        margin-bottom: 1em;
+        @media #{$mq-sm} {
+            margin: 0;
+        }
+    }
+
+    a {
+        color: #fff;
+    }
+
+    .btn {
+        text-transform: uppercase;
+        margin-bottom: 1em;
+        &:hover {
+          color: $bg;
+        }
+    }
+
+    .btn-large {
+        font-size: 180%;
+        letter-spacing: .1em;
+        border-width: 3px;
+        @media #{$mq-md} {
+            font-size: 120%;
+        }
+    }
+
+    p {
+        letter-spacing: .2em;
+        text-transform: uppercase;
+        font-size: 80%;
+        color: rgba(255,255,255,.7);
+    }
+
+}
+
+.header-logo {
+    max-width: 600px;
+}
+
+.slide {
+    max-width: 800px;
+    margin: auto;
+}
+
+.getstarted {
+    background: url("../images/azusa-colors-sample.gif") repeat top center;
+    background-size: 1000px auto;
+    min-height: 375px;
+    box-sizing: border-box;
+    position: relative;
+
+    .section-mask {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,.3);
+        z-index: 2;
+    }
+
+    h2,p {
+        text-shadow: 0 1px 5px rgba(0,0,0,.3);
+    }
+
+    .l-container {
+        position: relative;
+        z-index: 3;
+        color: #fff;
+    }
+}
+
+.l-footer {
+    background: $bg url("../images/globalheader.svg") repeat-x bottom center;
+    background-size: 1050px 10px;
+    text-align: left;
+    font-size: 75%;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    @media #{$mq-sm} {
+        background-size: 525px 5px;
+    }
+    .l-container {
+        margin-bottom: 10px;
+    }
+}
