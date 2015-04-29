@@ -76,10 +76,10 @@
   <header class="l-header">
 
     <script type="text/javascript">
-      if ((navigator.userAgent.indexOf('iPhone') > 0 && navigator.userAgent.indexOf('iPad') == -1) || navigator.userAgent.indexOf('iPod') > 0 || navigator.userAgent.indexOf('Android') > 0) {
+      if ( navigator.userAgent.indexOf('iPhone') > 0 || navigator.userAgent.indexOf('iPad') > 0 || navigator.userAgent.indexOf('iPod') > 0 || navigator.userAgent.indexOf('Android') > 0) {
         document.write('');
       }else {
-        document.write('<video id="video" poster="build/images/messiermarathon2011.jpg" width="100%" height="100%" autoplay="play" preload="auto" loop=""><source src="build/videos/messiermarathon2011.mp4" type="video/mp4"><source src="build/videos/messiermarathon2011.webm" type="video/webm"></video>');
+        document.write('<video id="video" poster="build/images/messiermarathon2011.jpg" width="100%" height="100%" autoplay="play" preload="auto" loop="loop"><source src="build/videos/messiermarathon2011.mp4" type="video/mp4"></video>');
       }
     </script>
 
@@ -98,13 +98,17 @@
   <section class="l-content section">
     <div class="l-container">
       <div class="ad">
+        <style>
+        .ad-azusa-colors { width: 728px; height: 90px; }
+          @media(max-width: 730px) { .ad-azusa-colors { width: 336px; height: 280px; } }
+          @media(max-width: 359px) { .ad-azusa-colors { width: 300px; height: 250px; } }
+        </style>
         <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <!-- azusa-colors -->
-        <ins class="adsbygoogle"
-             style="display:block"
+        <ins class="adsbygoogle ad-azusa-colors"
+             style="display:inline-block"
              data-ad-client="ca-pub-7746351817364448"
-             data-ad-slot="7294707815"
-             data-ad-format="auto"></ins>
+             data-ad-slot="7294707815"></ins>
         <script>
         (adsbygoogle = window.adsbygoogle || []).push({});
         </script>
